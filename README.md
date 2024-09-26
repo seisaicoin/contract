@@ -1,7 +1,9 @@
 # contract
 
 TokenV1 and TokenProxy is deprecated.
-Seiyan.fun is now using TokenV2, which is not upgradable.
+Seiyan.fun is now using TokenV2.
+When a user create a new token, seyian.fun deploy a new token via [Clones.cloneDeterministic](https://docs.openzeppelin.com/contracts/4.x/api/proxy#Clones-cloneDeterministic-address-bytes32-) because of gas fee optimization. (Not upgradeable contract)
+
 
 ## TokenV2 Implementation
 
